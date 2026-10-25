@@ -2,7 +2,7 @@ Octagon
 
 A free, private, open-source AI tool. Fully uncensored and unrestricted. Use built-in open-source models or connect your own provider models. You give the command, it executes.
 
-    ⚠️ Use at your own risk. This tool is provided "as is" without any warranties. You are solely responsible for how you use it and for any consequences that arise. The authors are not liable for any damages, data loss, or legal issues.
+    ⚠️ WARNING: Use at your own risk. This tool is provided "as is" without any warranties. You are solely responsible for how you use it and for any consequences that arise. The authors are not liable for any damages, data loss, or legal issues.
 
 Features
 
@@ -25,50 +25,64 @@ Requirements
     (Optional) API keys for external model providers
 
 Installation
-bash
 
-# 1. Clone the repository
+Step 1: Clone the repository
+text
+```
 git clone https://github.com/cloakgg/octagon.git
 cd octagon
+```
+Step 2: Install dependencies
 
-# 2. Install dependencies
-# Choose the command based on the actual project type:
+Choose the command based on the actual project type:
+text
+```
 pip install -r requirements.txt
-# or: npm install
-# or: follow the instructions in the repository's package manifest
-
+```
+or:
+text
+```
+npm install
+```
+or follow the instructions in the repository's package manifest.
 Configuration
 
-Create a configuration file or set environment variables (depending on how the project is designed):
-bash
+Create a configuration file or set environment variables (depending on how the project is designed).
 
-# Example: Copy the example config if one exists
+Example: Copy the example config if one exists
+text
+```
 cp .env.example .env
+```
+Edit .env with your settings
 
-# Edit .env with your settings
-# - For local models: specify the model path or download identifier
-# - For external providers: add your API key and base URL
+    For local models: specify the model path or download identifier
+
+    For external providers: add your API key and base URL
 
 Running
 
 You have two options:
 
 Option 1: Shell script
-bash
 
-# Grant execution permission first (if needed)
+Grant execution permission first (if needed):
+text
+```
 chmod +x run_octagon.sh
-
-# Run
+```
+Run:
+text
+```
 ./run_octagon.sh
-
+```
 Option 2: Python entry point
-bash
-
+text
+```
 python octagon.py
-
+```
 Usage Notes
-
+*
     This tool has no content filters. It will generate output based on your prompts without refusal.
 
     When connecting to external providers, your prompts and data are subject to that provider's policies. Review them before use.
