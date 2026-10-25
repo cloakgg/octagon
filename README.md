@@ -1,10 +1,10 @@
-Octagon
+# OCTAGON ( private - uncensored tool )
 
 A free, private, open-source AI tool. Fully uncensored and unrestricted. Use built-in open-source models or connect your own provider models. You give the command, it executes.
 
     ⚠️ WARNING: Use at your own risk. This tool is provided "as is" without any warranties. You are solely responsible for how you use it and for any consequences that arise. The authors are not liable for any damages, data loss, or legal issues.
 
-Features
+***Features***
 
     Free & Open Source: No paywalls, no hidden fees. Inspect and modify the code.
 
@@ -14,7 +14,7 @@ Features
 
     Flexible Model Support: Use the bundled open-source models, or connect to external providers (OpenAI-compatible APIs, local inference servers, etc.).
 
-Requirements
+***Requirements***
 
     Python 3.10+ (or Node.js 18+, depending on the actual implementation)
 
@@ -24,10 +24,10 @@ Requirements
 
     (Optional) API keys for external model providers
 
-Installation
+***Installation***
 
 Step 1: Clone the repository
-text
+
 ```
 git clone https://github.com/cloakgg/octagon.git
 cd octagon
@@ -35,17 +35,15 @@ cd octagon
 Step 2: Install dependencies
 
 Choose the command based on the actual project type:
-text
 ```
 pip install -r requirements.txt
 ```
-or:
-text
+***or***
 ```
 npm install
 ```
-or follow the instructions in the repository's package manifest.
-Configuration
+***or follow the instructions in the repository's package manifest.
+Configuration***
 
 Create a configuration file or set environment variables (depending on how the project is designed).
 
@@ -67,17 +65,17 @@ You have two options:
 Option 1: Shell script
 
 Grant execution permission first (if needed):
-text
+
 ```
 chmod +x run_octagon.sh
 ```
 Run:
-text
+
 ```
 ./run_octagon.sh
 ```
 Option 2: Python entry point
-text
+
 ```
 python octagon.py
 ```
